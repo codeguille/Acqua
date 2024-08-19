@@ -1,0 +1,274 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://cdn.pixabay.com/photo/2018/08/10/16/44/laundry-mat-3597216_1280.jpg);
+    background-size: cover;       
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+nav {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 30px 30px 20px;
+    height: 120px;
+}
+
+h1 {
+    color: midnightblue;
+    font-size: 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+a{
+    color: midnightblue;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* home */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 25px;
+    height: 300px;
+    width: 70%;
+    background-color:#fff;
+    gap: 7em;
+    color: midnightblue;
+    margin: 0 auto;
+    border-radius: .5em;
+}
+
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    max-width: 40%;
+    padding-top: 20px;
+    padding-left: 5%;
+    opacity: 1;
+    
+}
+
+.link {
+    padding-top: 25px;
+    text-align: center;
+}
+
+.ropadoblada {
+    width: 50%;
+    height: auto;
+    padding-right: 10%;
+    padding-top: 25px;
+}
+
+/* cards */
+.container1 {
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    margin-top: 50px;
+}
+
+.card {
+    width: 200px;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.card img {
+    width: 170px;
+    height: auto;
+}
+
+.card .contenido {
+    padding: 15px;
+    text-align: center;
+}
+
+.card.contenido p{
+    line-height: 1.5;
+    color: #6a6a6a;
+}
+
+.card .contenido h3 {
+    color:#24aff0;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+/* boton de whatsapp */
+.container-btn{
+    background-color: #2e6329;
+    border: 1px solid #fff;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 25px;
+    padding: 20px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+
+.container-btn:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.btn-wsp {
+    width: 45px;
+    transition: ease 1s;
+}
+
+@keyframes efecto{
+    0%{
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+    }
+    100%{
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}
+
+/* ubicacion */
+
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#fff;
+    gap: 2em;
+    color: midnightblue;
+    width: 75%;
+    margin: 0 auto;
+    border-radius: .5em;
+    margin-top: 30px;
+}
+
+.box {
+    max-width: 600px;
+    max-height: 500px;
+    height: 350px;
+    padding-top: 40px;
+    border-radius: .5em;
+}
+
+.tituloubicacion {
+    font-size: 3em;
+    text-align: justify;
+    padding-top: 50px;
+}
+
+.textoubicacion {
+    font-size: 1em;
+}
+
+iframe {
+    border-radius: 1.2em;
+    border: 3px solid midnightblue;
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+}
+
+iframe:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+
+/* footer */
+
+.footerContainer {
+    background-color: #000;
+    padding: 2px 30px 20px;
+    opacity: 90;
+    height: 80px;
+}
+
+.footerNav {
+    margin: 30px 0;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footerNav ul li a {
+    color: #fff;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.1em;
+    opacity: 0.7;
+    transition: 0,5s;
+}
+
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+
+.footerBottom {
+    background-color: rgb(32, 32, 32);
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: white;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px, 5px;
+}
