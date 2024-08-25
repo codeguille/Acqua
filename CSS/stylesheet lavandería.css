@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 .background {
@@ -39,7 +41,6 @@ nav {
 h1 {
     color: midnightblue;
     font-size: 45px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 ul li {
@@ -50,7 +51,6 @@ ul li {
 a{
     color: midnightblue;
     text-decoration: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* home */
@@ -59,7 +59,6 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-bottom: 25px;
     height: 300px;
     width: 70%;
@@ -82,9 +81,10 @@ a{
     flex-direction: column;
     text-align: justify;
     max-width: 40%;
-    padding-top: 20px;
+    padding-top: 15px;
     padding-left: 5%;
     opacity: 1;
+    font-size: 0.9em;
     
 }
 
@@ -94,9 +94,9 @@ a{
 }
 
 .ropadoblada {
-    width: 50%;
+    width: 45%;
     height: auto;
-    padding-right: 10%;
+    padding-right: 5%;
     padding-top: 25px;
 }
 
@@ -127,6 +127,8 @@ a{
 .card img {
     width: 170px;
     height: auto;
+    padding-left: 40px;
+    padding-top: 30px;
 }
 
 .card .contenido {
@@ -140,7 +142,7 @@ a{
 }
 
 .card .contenido h3 {
-    color:#24aff0;
+    color: midnightblue;
     font-weight: 500;
     margin-bottom: 15px;
 }
@@ -185,7 +187,7 @@ a{
     align-items: center;
     justify-content: center;
     background-color:#fff;
-    gap: 2em;
+    gap: 3em;
     color: midnightblue;
     width: 75%;
     margin: 0 auto;
@@ -205,10 +207,13 @@ a{
     font-size: 3em;
     text-align: justify;
     padding-top: 50px;
+    padding-left: 6%;
 }
 
 .textoubicacion {
     font-size: 1em;
+    padding-left: 6%;
+    text-align: justify;
 }
 
 iframe {
@@ -263,6 +268,8 @@ iframe:hover {
 
 .footerBottom p {
     color: white;
+    font-size: 0.8em;
+    opacity: 0.6;
 }
 
 .designer {
